@@ -1,3 +1,4 @@
 import Input from "./Input";
+import FileInput from "./FileInput";
 
-export default Input;
+export default { Input, FileInput };

@@ -9,7 +9,6 @@ export default function Home() {
         <div className="mb-10">Home Page</div>
       </Link>
       <HomeContainer.List />
-      <HomeContainer.ListItem />
     </div>
   );
 }
