@@ -1,5 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import { useForm, FormProvider } from "react-hook-form";
 
 import { Button, Form as FormComponent } from "@app/components";
@@ -15,12 +17,16 @@ const Form: React.FC<FormPropTypes> = () => {
     },
   });
 
+  const router = useRouter();
+
   const { handleSubmit, reset } = useFormMethods;
 
   const { mutate: createPostMutate } = api.useCreatePost({});
 
   const onSubmit = (data: IPostFormType) => {
     createPostMutate(data);
+    reset();
+    router.push("/");
   };
 
   return (
