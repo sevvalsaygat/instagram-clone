@@ -7,15 +7,13 @@ type ListItemPropTypes = {
 
 const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
   return (
-    <div>
-      <Image
-        src={post.image}
-        width={100}
-        height={100}
-        alt="logo"
-        className="object-contain"
-      />
-    </div>
+    <Image
+      src={post.image}
+      width={100}
+      height={100}
+      alt="logo"
+      className="object-contain"
+    />
   );
 };
 

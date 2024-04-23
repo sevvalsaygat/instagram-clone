@@ -1,6 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
 import type { MutateOptions } from "@tanstack/react-query";
-
 import type { AxiosError } from "axios";
 
 import { useAxios } from "@app/hooks";
