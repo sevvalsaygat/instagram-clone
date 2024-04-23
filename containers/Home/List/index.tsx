@@ -9,9 +9,9 @@ const List: React.FC<ListPropTypes> = () => {
   const { data: postData, isLoading, isSuccess } = api.useGetPosts();
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-col w-2/3">
       {postData?.data.map((post) => (
-        <div key={post.id} className="border rounded-xl mb-5">
+        <div key={post.id} className="w-full">
           <Home.ListItem post={post} />
         </div>
       ))}
