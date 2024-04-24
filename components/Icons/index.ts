@@ -7,6 +7,7 @@ import Messages from "./Messages";
 import Notification from "./Notification";
 import Create from "./Create";
 import Profile from "./Profile";
+import Setting from "./Setting";
 
 export default {
   Logo,
@@ -18,4 +19,5 @@ export default {
   Notification,
   Create,
   Profile,
+  Setting,
 };
