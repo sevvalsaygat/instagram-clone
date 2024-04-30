@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import { Icons } from "@app/components";
 
-type UpdatePropTypes = {};
+type StoriesPropTypes = {};
 
-const Update: React.FC<UpdatePropTypes> = () => {
+const Stories: React.FC<StoriesPropTypes> = () => {
   return (
     <div className="flex flex-row gap-5 my-5">
       <div className="flex flex-col">
@@ -131,4 +131,4 @@ const Update: React.FC<UpdatePropTypes> = () => {
   );
 };
 
-export default Update;
+export default Stories;

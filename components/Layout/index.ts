@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar";
-import Update from "./Update";
+import Stories from "./Stories";
 import Suggestions from "./Suggestions";
 
-export default { Sidebar, Update, Suggestions };
+export default { Sidebar, Stories, Suggestions };

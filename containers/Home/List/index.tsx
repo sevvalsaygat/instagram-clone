@@ -22,7 +22,7 @@ const List: React.FC<ListPropTypes> = () => {
               Takip Ettiklerin
             </div>
           </div>
-          <Layout.Update />
+          <Layout.Stories />
           {postData?.data.map((post) => (
             <div
               key={post.id}
@@ -33,7 +33,7 @@ const List: React.FC<ListPropTypes> = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col 2xl:w-2/5 mr-36">
+      <div className="flex flex-col 2xl:w-2/5 2xl:mr-36">
         <Layout.Suggestions />
       </div>
     </div>

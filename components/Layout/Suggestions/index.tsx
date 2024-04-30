@@ -51,7 +51,7 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
       </div>
     ),
     description: (
-      <div className="max-w-[180px] text-xs leading-4 text-gray-400 truncate">
+      <div className="xl:max-w-[160px] 2xl:max-w-[180px] text-xs leading-4 text-gray-400 truncate">
         StellarSynapse + 7 kişi takip ediyor
       </div>
     ),
@@ -103,7 +103,7 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
       </div>
     ),
     description: (
-      <div className="max-w-[180px] text-xs leading-4 text-gray-400 truncate">
+      <div className="xl:max-w-[160px] 2xl:max-w-[180px] text-xs leading-4 text-gray-400 truncate">
         NeonNebula + 3 kişi takip ediyor
       </div>
     ),
@@ -117,7 +117,7 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
 
 const Suggestions: React.FC<SuggestionsPropTypes> = () => {
   return (
-    <div className="w-2/3 mt-2">
+    <div className="2xl:w-2/3 mt-2 w-full">
       <div className="flex flex-row justify-between mb-6">
         <div className="flex flex-row gap-3 items-center">
           <Image
@@ -167,7 +167,25 @@ const Suggestions: React.FC<SuggestionsPropTypes> = () => {
           }
         )}
       </div>
-      <div>3</div>
+      <div className="flex flex-col mt-6">
+        <div className="flex flex-row gap-1">
+          <div className="text-xs text-gray-100">Hakkında .</div>
+          <div className="text-xs text-gray-100">Yardım .</div>
+          <div className="text-xs text-gray-100">Basın .</div>
+          <div className="text-xs text-gray-100">API .</div>
+          <div className="text-xs text-gray-100">İş Fırsatları</div>
+        </div>
+        <div className="flex flex-row gap-1">
+          <div className="text-xs leading-4 text-gray-100">Gizlilik .</div>
+          <div className="text-xs leading-4 text-gray-100">Koşullar .</div>
+          <div className="text-xs leading-4 text-gray-100">Konumlar .</div>
+          <div className="text-xs leading-4 text-gray-100">Dil .</div>
+          <div className="text-xs leading-4 text-gray-100">Meta Verified</div>
+        </div>
+        <div className="text-xs leading-4 text-gray-100 mt-6">
+          © 2024 INSTAGRAM FROM META
+        </div>
+      </div>
     </div>
   );
 };
