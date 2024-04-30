@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClientProviders>
           <div className="flex flex-row w-full">
-            <div className="w-[336px] h-screen max-h-screen">
+            <div className="w-1/5 h-screen max-h-screen">
               <Layout.Sidebar />
             </div>
             <div className="w-full max-h-screen overflow-y-auto">

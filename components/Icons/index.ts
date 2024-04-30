@@ -8,6 +8,7 @@ import Notification from "./Notification";
 import Create from "./Create";
 import Profile from "./Profile";
 import Setting from "./Setting";
+import ChevronRight from "./ChevronRight";
 
 export default {
   Logo,
@@ -20,4 +21,5 @@ export default {
   Create,
   Profile,
   Setting,
+  ChevronRight,
 };
