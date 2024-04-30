@@ -7,7 +7,7 @@ type StoriesPropTypes = {};
 
 const Stories: React.FC<StoriesPropTypes> = () => {
   return (
-    <div className="flex flex-row gap-5 my-5">
+    <div className="flex flex-row gap-5 mt-5 mb-8">
       <div className="flex flex-col">
         <div className="bg-gradient-to-r from-yellow-300 via-rose-500 to-fuchsia-600 p-0.5 rounded-full cursor-pointer">
           <Image

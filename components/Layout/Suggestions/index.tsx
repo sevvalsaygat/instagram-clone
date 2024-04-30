@@ -73,7 +73,7 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
     ),
     nickname: (
       <div className="text-sm leading-4 font-semibold cursor-pointer">
-        enigmasence
+        sapphiresiren
       </div>
     ),
     description: (
@@ -129,9 +129,9 @@ const Suggestions: React.FC<SuggestionsPropTypes> = () => {
           />
           <div className="flex flex-col gap-1">
             <div className="text-sm leading-4 font-semibold cursor-pointer">
-              enigmasence
+              sapphiresiren
             </div>
-            <div className="text-sm leading-4 text-gray-400">Aurora</div>
+            <div className="text-sm leading-4 text-gray-400">Serena</div>
           </div>
         </div>
         <div className="flex items-center text-xs leading-4 text-sky-500 hover:text-blue-950 font-semibold cursor-pointer">

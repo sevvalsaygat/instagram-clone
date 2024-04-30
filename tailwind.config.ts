@@ -35,6 +35,9 @@ const config: Config = {
         blue: {
           950: "#00376b",
         },
+        slate: {
+          300: "#b2b2b2",
+        },
       },
     },
   },

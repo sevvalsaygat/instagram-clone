@@ -24,10 +24,7 @@ const List: React.FC<ListPropTypes> = () => {
           </div>
           <Layout.Stories />
           {postData?.data.map((post) => (
-            <div
-              key={post.id}
-              className="flex items-center justify-center w-full"
-            >
+            <div key={post.id}>
               <Home.ListItem post={post} />
             </div>
           ))}

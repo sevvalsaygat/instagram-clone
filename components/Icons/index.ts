@@ -9,6 +9,12 @@ import Create from "./Create";
 import Profile from "./Profile";
 import Setting from "./Setting";
 import ChevronRight from "./ChevronRight";
+import ThreePoints from "./ThreePoints";
+import Heart from "./Heart";
+import Comment from "./Comment";
+import Send from "./Send";
+import Save from "./Save";
+import SmileFace from "./SmileFace";
 
 export default {
   Logo,
@@ -22,4 +28,10 @@ export default {
   Profile,
   Setting,
   ChevronRight,
+  ThreePoints,
+  Heart,
+  Comment,
+  Send,
+  Save,
+  SmileFace,
 };
