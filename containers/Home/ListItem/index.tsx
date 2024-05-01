@@ -15,8 +15,8 @@ const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
           <Image
             height={35}
             width={35}
-            alt="profile9"
-            src="/profile9.png"
+            alt="house"
+            src="/house.png"
             className="rounded-full bg-white p-0.5 cursor-pointer"
           />
           <div className="flex flex-row items-center justify-between w-full">
@@ -56,8 +56,8 @@ const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
               <Image
                 height={0}
                 width={0}
-                alt="profile6"
-                src="/profile6.png"
+                alt="squares"
+                src="/squares.png"
                 className="rounded-full"
                 style={{
                   width: "3%",

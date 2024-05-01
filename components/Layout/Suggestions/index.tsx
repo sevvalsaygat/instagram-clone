@@ -14,8 +14,8 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
       <Image
         height={47}
         width={47}
-        alt="profile10"
-        src="/profile10.png"
+        alt="hat"
+        src="/hat.png"
         className="rounded-full cursor-pointer"
       />
     ),
@@ -40,8 +40,8 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
       <Image
         height={47}
         width={47}
-        alt="profile11"
-        src="/profile11.png"
+        alt="sea"
+        src="/sea.png"
         className="rounded-full cursor-pointer"
       />
     ),
@@ -66,8 +66,8 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
       <Image
         height={47}
         width={47}
-        alt="profile12"
-        src="/profile12.png"
+        alt="palace"
+        src="/palace.png"
         className="rounded-full cursor-pointer"
       />
     ),
@@ -92,8 +92,8 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
       <Image
         height={47}
         width={47}
-        alt="profile13"
-        src="/profile13.png"
+        alt="wedding"
+        src="/wedding.png"
         className="rounded-full cursor-pointer"
       />
     ),
@@ -123,8 +123,8 @@ const Suggestions: React.FC<SuggestionsPropTypes> = () => {
           <Image
             height={47}
             width={47}
-            alt="profile9"
-            src="/profile9.png"
+            alt="house"
+            src="/house.png"
             className="rounded-full bg-white p-0.5"
           />
           <div className="flex flex-col gap-1">
