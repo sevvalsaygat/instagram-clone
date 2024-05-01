@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 import { useForm, FormProvider } from "react-hook-form";
 
-import { Button, Form as FormComponent } from "@app/components";
+import { Button, Form as FormComponent, PostModal } from "@app/components";
 import { api } from "@app/hooks";
 
 type FormPropTypes = {};
@@ -54,6 +54,7 @@ const Form: React.FC<FormPropTypes> = () => {
           title="Create"
         />
       </FormProvider>
+      <PostModal />
     </div>
   );
 };

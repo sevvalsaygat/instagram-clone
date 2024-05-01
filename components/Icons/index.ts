@@ -15,6 +15,7 @@ import Comment from "./Comment";
 import Send from "./Send";
 import Save from "./Save";
 import SmileFace from "./SmileFace";
+import Post from "./Post";
 
 export default {
   Logo,
@@ -34,4 +35,5 @@ export default {
   Send,
   Save,
   SmileFace,
+  Post,
 };

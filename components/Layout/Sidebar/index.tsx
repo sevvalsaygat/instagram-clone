@@ -1,74 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Link from "next/link";
 
 import cn from "classnames";
 
-import { Icons } from "@app/components";
+import { Icons, PostModal } from "@app/components";
 
 type SidebarPropTypes = {};
-
-const SIDEBAR_TOP_BY_OPTIONS: Array<{
-  title: string | JSX.Element;
-  icon: React.FC;
-  className?: string;
-}> = [
-  {
-    title: <Link href="/">Ana Sayfa</Link>,
-    icon: () => (
-      <Icons.Home className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base font-semibold leading-5",
-  },
-  {
-    title: "Ara",
-    icon: () => (
-      <Icons.Search className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-  {
-    title: "Keşfet",
-    icon: () => (
-      <Icons.Discover className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-  {
-    title: "Reels",
-    icon: () => (
-      <Icons.Reels className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-  {
-    title: "Mesajlar",
-    icon: () => (
-      <Icons.Messages className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-  {
-    title: "Bildirimler",
-    icon: () => (
-      <Icons.Notification className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-  {
-    title: <Link href="post/new">Oluştur</Link>,
-    icon: () => (
-      <Icons.Create className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-  {
-    title: "Profil",
-    icon: () => (
-      <Icons.Profile className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
-    ),
-    className: "text-base leading-5",
-  },
-];
 
 const SIDEBAR_BOTTOM_BY_OPTIONS: Array<{
   title: string | JSX.Element;
@@ -85,6 +24,79 @@ const SIDEBAR_BOTTOM_BY_OPTIONS: Array<{
 ];
 
 const Sidebar: React.FC<SidebarPropTypes> = () => {
+  const postModalRef = useRef<PostModalRefTypes | null>(null);
+
+  const SIDEBAR_TOP_BY_OPTIONS: Array<{
+    title: string | JSX.Element;
+    icon: React.FC;
+    className?: string;
+  }> = [
+    {
+      title: <Link href="/">Ana Sayfa</Link>,
+      icon: () => (
+        <Icons.Home className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base font-semibold leading-5",
+    },
+    {
+      title: "Ara",
+      icon: () => (
+        <Icons.Search className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+    {
+      title: "Keşfet",
+      icon: () => (
+        <Icons.Discover className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+    {
+      title: "Reels",
+      icon: () => (
+        <Icons.Reels className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+    {
+      title: "Mesajlar",
+      icon: () => (
+        <Icons.Messages className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+    {
+      title: "Bildirimler",
+      icon: () => (
+        <Icons.Notification className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+    {
+      title: (
+        <button
+          onClick={() => {
+            postModalRef.current?.openModal();
+          }}
+        >
+          Oluştur
+        </button>
+      ),
+      icon: () => (
+        <Icons.Create className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+    {
+      title: "Profil",
+      icon: () => (
+        <Icons.Profile className="transform transition ease-in-out delay-150  group-hover:-translate-y-0.5 hover:scale-110 duration-200" />
+      ),
+      className: "text-base leading-5",
+    },
+  ];
+
   return (
     <div className="flex flex-col pt-2 px-3 border-r border-gray-300 h-full">
       <div className="px-3 pt-8 pb-3 mb-5">
@@ -128,6 +140,7 @@ const Sidebar: React.FC<SidebarPropTypes> = () => {
           )}
         </div>
       </div>
+      <PostModal ref={postModalRef} />
     </div>
   );
 };

@@ -72,7 +72,7 @@ const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
               <div className="text-sm font-semibold leading-5">
                 sapphiresiren
               </div>
-              <div className="text-sm leading-5">Hello 🙌</div>
+              <div className="text-sm leading-5">{post.description}</div>
             </div>
             <div className="text-sm leading-5 text-gray-400 mt-2">
               22 yorumun tümünü gör
