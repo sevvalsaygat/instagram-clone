@@ -54,7 +54,6 @@ const Form: React.FC<FormPropTypes> = () => {
           title="Create"
         />
       </FormProvider>
-      <PostModal />
     </div>
   );
 };

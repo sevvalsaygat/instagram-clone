@@ -16,6 +16,9 @@ import Send from "./Send";
 import Save from "./Save";
 import SmileFace from "./SmileFace";
 import Post from "./Post";
+import ArrowLeft from "./ArrowLeft";
+import Location from "./Location";
+import ArrowBottom from "./ArrowBottom";
 
 export default {
   Logo,
@@ -36,4 +39,7 @@ export default {
   Save,
   SmileFace,
   Post,
+  ArrowLeft,
+  Location,
+  ArrowBottom,
 };
