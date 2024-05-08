@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Discover: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Keşfet"
       fill="currentColor"
       height="24"
       role="img"
@@ -16,12 +15,12 @@ const Discover: React.FC<SVGProps<SVGSVGElement>> = (props) => {
         fill="none"
         points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
       ></polygon>
       <polygon
-        fill-rule="evenodd"
+        fillRule="evenodd"
         points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"
       ></polygon>
       <circle
@@ -30,9 +29,9 @@ const Discover: React.FC<SVGProps<SVGSVGElement>> = (props) => {
         fill="none"
         r="10.5"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
       ></circle>
     </svg>
   );

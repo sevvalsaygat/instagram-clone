@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Send: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Gönderi Paylaş"
       fill="currentColor"
       height="24"
       role="img"
@@ -15,8 +14,8 @@ const Send: React.FC<SVGProps<SVGSVGElement>> = (props) => {
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="22"
         x2="9.218"
         y1="3"
@@ -26,8 +25,8 @@ const Send: React.FC<SVGProps<SVGSVGElement>> = (props) => {
         fill="none"
         points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
         stroke="currentColor"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinejoin="round"
+        strokeWidth="2"
       ></polygon>
     </svg>
   );

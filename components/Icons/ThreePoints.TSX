@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const ThreePoints: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Diğer seçenekler"
       fill="currentColor"
       height="24"
       role="img"

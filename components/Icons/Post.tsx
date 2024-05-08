@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Post: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Görsel veya video gibi medya içeriklerini temsil eden simge"
       fill="currentColor"
       height="77"
       role="img"

@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Location: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Konum ekle"
       fill="currentColor"
       height="16"
       role="img"

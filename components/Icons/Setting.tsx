@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Setting: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Ayarlar"
       fill="currentColor"
       height="24"
       role="img"
@@ -15,9 +14,9 @@ const Setting: React.FC<SVGProps<SVGSVGElement>> = (props) => {
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="3"
         x2="21"
         y1="4"
@@ -26,9 +25,9 @@ const Setting: React.FC<SVGProps<SVGSVGElement>> = (props) => {
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="3"
         x2="21"
         y1="12"
@@ -37,9 +36,9 @@ const Setting: React.FC<SVGProps<SVGSVGElement>> = (props) => {
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="3"
         x2="21"
         y1="20"

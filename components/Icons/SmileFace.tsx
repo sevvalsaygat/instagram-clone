@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const SmileFace: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="İfade Simgesi"
       fill="currentColor"
       height="13"
       role="img"
