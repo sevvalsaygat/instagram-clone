@@ -19,18 +19,16 @@ type FileInputPropTypes = {
         "valueAsNumber" | "valueAsDate" | "setValueAs" | "disabled"
       >
     | undefined;
-  variant?: "primary";
-  className?: string;
   accept?: string;
+  placeholder?: string;
 };
 
 const FileInput: React.FC<FileInputPropTypes> = ({
   name,
   label,
   rules,
-  variant,
-  className,
   accept,
+  placeholder,
 }) => {
   const {
     control,
@@ -51,33 +49,37 @@ const FileInput: React.FC<FileInputPropTypes> = ({
           "mt-2": !!label,
         })}
       >
-        <Controller
-          name={name}
-          control={control}
-          rules={rules}
-          render={({ field }) => (
-            <input
-              onChange={(e) => {
-                if (e.target.files) {
-                  const file = e.target.files[0];
-                  const reader = new FileReader();
-                  reader.onloadend = () => {
-                    field.onChange(reader.result);
-                  };
-                  reader.readAsDataURL(file);
-                }
-              }}
-              onBlur={field.onBlur}
-              name={field.name}
-              type="file"
-              accept={accept}
-              className={cn(className, {
-                "flex flex-col w-full mb-10 border border-slate-500 rounded-md p-3 placeholder:text-sm font-light placeholder:text-zinc-600 placeholder:font-light focus:outline-none focus:ring-1 focus:ring- focus:bg-white text-sm":
-                  variant === "primary",
-              })}
+        <div className="flex items-center justify-center w-full">
+          <label className="flex flex-col items-center justify-center cursor-pointer">
+            <div className="bg-sky-500 rounded-lg px-4 py-2 text-sm text-white font-semibold leading-4 mt-2 cursor-pointer">
+              {placeholder}
+            </div>
+            <Controller
+              name={name}
+              control={control}
+              rules={rules}
+              render={({ field }) => (
+                <input
+                  onChange={(e) => {
+                    if (e.target.files) {
+                      const file = e.target.files[0];
+                      const reader = new FileReader();
+                      reader.onloadend = () => {
+                        field.onChange(reader.result);
+                      };
+                      reader.readAsDataURL(file);
+                    }
+                  }}
+                  onBlur={field.onBlur}
+                  name={field.name}
+                  type="file"
+                  accept={accept}
+                  className="hidden"
+                />
+              )}
             />
-          )}
-        />
+          </label>
+        </div>
       </div>
       {fieldError && (
         <div className="fixed -mt-8 ml-2 text-rose-800 text-xs font-sans">

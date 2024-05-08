@@ -1,6 +1,6 @@
 import React, { SVGProps, memo } from "react";
 
-const Setting: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+const ArrowLeft: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
       fill="currentColor"
@@ -10,42 +10,28 @@ const Setting: React.FC<SVGProps<SVGSVGElement>> = (props) => {
       width="24"
       {...props}
     >
-      <title>Ayarlar</title>
+      <title>Geri</title>
       <line
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        x1="3"
-        x2="21"
-        y1="4"
-        y2="4"
+        x1="2.909"
+        x2="22.001"
+        y1="12.004"
+        y2="12.004"
       ></line>
-      <line
+      <polyline
         fill="none"
+        points="9.276 4.726 2.001 12.004 9.276 19.274"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        x1="3"
-        x2="21"
-        y1="12"
-        y2="12"
-      ></line>
-      <line
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        x1="3"
-        x2="21"
-        y1="20"
-        y2="20"
-      ></line>
+      ></polyline>
     </svg>
   );
 };
 
-export default memo(Setting);
+export default memo(ArrowLeft);

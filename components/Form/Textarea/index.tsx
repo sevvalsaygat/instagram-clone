@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 import {
@@ -10,7 +8,7 @@ import {
 } from "react-hook-form";
 import cn from "classnames";
 
-type InputPropTypes = {
+type TextareaPropTypes = {
   name: string;
   label?: string;
   rules?:
@@ -23,18 +21,16 @@ type InputPropTypes = {
   defaultValue?: string;
   variant?: "primary";
   className?: string;
-  type?: "text";
 };
 
-const Input: React.FC<InputPropTypes> = ({
+const Textarea: React.FC<TextareaPropTypes> = ({
   name,
   label,
   rules,
   placeholder,
-  defaultValue = "",
+  defaultValue = null,
   variant,
   className,
-  type = "text",
 }) => {
   const {
     control,
@@ -46,7 +42,7 @@ const Input: React.FC<InputPropTypes> = ({
   return (
     <React.Fragment>
       {label && (
-        <label className="block text-sm ml-1 font-medium leading-6 text-purple-900">
+        <label className="block text-sm font-medium leading-6 text-gray-900">
           {label}
         </label>
       )}
@@ -61,12 +57,11 @@ const Input: React.FC<InputPropTypes> = ({
           rules={rules}
           defaultValue={defaultValue}
           render={({ field }) => (
-            <input
+            <textarea
               {...field}
-              type={type}
               placeholder={placeholder}
               className={cn(className, {
-                "flex flex-col w-full mb-10 border border-slate-500 rounded-md p-3 placeholder:text-sm font-light placeholder:text-zinc-600 placeholder:font-light focus:outline-none focus:ring-1 focus:ring- focus:bg-white text-sm":
+                "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-zinc-500 placeholder:text-stone-950 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6":
                   variant === "primary",
               })}
             />
@@ -74,12 +69,10 @@ const Input: React.FC<InputPropTypes> = ({
         />
       </div>
       {fieldError && (
-        <div className="fixed -mt-8 ml-2 text-rose-800 text-xs font-sans">
-          {fieldError.message as string}
-        </div>
+        <div className="mt-2 text-red-500">{fieldError.message as string}</div>
       )}
     </React.Fragment>
   );
 };
 
-export default Input;
+export default Textarea;

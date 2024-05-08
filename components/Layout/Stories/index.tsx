@@ -130,7 +130,7 @@ const STORIES_BY_OPTIONS: Array<{
               />
             </div>
           </div>
-          <div className="bg-white rounded-full p-0.5 w-fit flex items-center justify-center absolute mt-5 mr-3 right-0 z-20 cursor-pointer">
+          <div className="bg-white z-10 rounded-full p-0.5 w-fit flex items-center justify-center absolute mt-5 mr-3 right-0 cursor-pointer">
             <Icons.ChevronRight />
           </div>
         </div>

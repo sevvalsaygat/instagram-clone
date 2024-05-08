@@ -73,7 +73,7 @@ const SUGGESTIONS_BY_OPTIONS: Array<{
     ),
     nickname: (
       <div className="text-sm leading-4 font-semibold cursor-pointer">
-        sapphiresiren
+        harmony_haven
       </div>
     ),
     description: (

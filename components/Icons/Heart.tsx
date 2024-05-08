@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Heart: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Beğen"
       fill="currentColor"
       height="24"
       role="img"

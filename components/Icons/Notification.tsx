@@ -3,7 +3,6 @@ import React, { SVGProps, memo } from "react";
 const Notification: React.FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      aria-label="Bildirimler"
       fill="currentColor"
       height="24"
       role="img"

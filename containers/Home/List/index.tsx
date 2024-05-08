@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import { Home } from "@app/containers";
 import { api } from "@app/hooks";
 import { Layout } from "@app/components";
