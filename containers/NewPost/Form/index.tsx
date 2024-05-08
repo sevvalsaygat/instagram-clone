@@ -40,7 +40,6 @@ const Form: React.FC<FormPropTypes> = () => {
         <div>
           <FormComponent.FileInput
             name="image"
-            variant="primary"
             label="Image"
             rules={{
               required: "This field is required",
