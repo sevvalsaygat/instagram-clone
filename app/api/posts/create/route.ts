@@ -10,6 +10,7 @@ export async function POST(request: Request) {
     id: uuidv4(),
     description: body.description,
     image: body.image,
+    createdAt: new Date().toISOString(),
   };
 
   myDb.data.posts.push(createdPost);

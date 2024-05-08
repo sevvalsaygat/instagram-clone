@@ -24,7 +24,7 @@ const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
               <div className="text-sm leading-4 font-semibold">
                 sapphiresiren
               </div>
-              <div className="text-sm leading-4 text-gray-400">• 10s</div>
+              <div className="text-sm leading-4 text-gray-400">• 1s</div>
             </div>
             <Icons.ThreePoints className="cursor-pointer" />
           </div>
