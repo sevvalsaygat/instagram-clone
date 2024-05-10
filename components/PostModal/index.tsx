@@ -78,7 +78,7 @@ const PostModal: React.ForwardRefRenderFunction<
                   "2xl:h-[790px] xl:h-[611px] bg-white text-left transition-all rounded-xl shadow-md",
                   {
                     "2xl:w-2/5 xl:w-[568px]": stepWatch === 1,
-                    "2xl:w-1/2 xl:w-[1088px]": stepWatch === 2,
+                    "2xl:w-1/2 xl:w-[908px]": stepWatch === 2,
                   }
                 )}
               >

@@ -61,7 +61,7 @@ const StepTwo: React.FC<StepTwoPropTypes> = ({ closeModal }) => {
               width: "100%",
               height: "100%",
             }}
-            className="object-cover"
+            className="object-cover rounded-bl-xl"
           />
         </div>
         <div className="flex flex-col py-5 w-2/6">
