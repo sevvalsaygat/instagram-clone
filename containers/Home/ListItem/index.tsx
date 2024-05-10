@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
-import { Icons } from "@app/components";
+import { Icons, PostDropdown } from "@app/components";
 
 type ListItemPropTypes = {
   post: PostType;
@@ -26,7 +28,7 @@ const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
               </div>
               <div className="text-sm leading-4 text-gray-400">• 1s</div>
             </div>
-            <Icons.ThreePoints className="cursor-pointer" />
+            <PostDropdown post={post} />
           </div>
         </div>
         <div className="flex  relative">

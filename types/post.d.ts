@@ -10,3 +10,7 @@ type IPostFormType = {
   image: string;
   step: number;
 };
+
+type RemovePostRequestType = {
+  id: string;
+};

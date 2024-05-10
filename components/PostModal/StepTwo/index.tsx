@@ -17,15 +17,18 @@ const StepTwo: React.FC<StepTwoPropTypes> = ({ closeModal }) => {
   const { handleSubmit, reset, watch } = useFormContext<IPostFormType>();
 
   const queryClient = useQueryClient();
-  const { mutate: createPostMutate } = api.useCreatePost({});
+  const { mutate: createPostMutate } = api.useCreatePost({
+    onSuccess: () => {
+      setTimeout(() => {
+        queryClient.invalidateQueries({ queryKey: ["useGetPosts"] });
+      }, 500);
+    },
+  });
 
   const onSubmit = (data: IPostFormType) => {
     createPostMutate(data);
     closeModal();
     reset();
-    setTimeout(() => {
-      queryClient.invalidateQueries({ queryKey: ["useGetPosts"] });
-    }, 500);
   };
 
   const imageWatch = watch("image");

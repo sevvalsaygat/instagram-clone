@@ -38,6 +38,9 @@ const config: Config = {
         slate: {
           300: "#b2b2b2",
         },
+        red: {
+          400: "#ed4956",
+        },
       },
     },
   },
