@@ -1,3 +1,5 @@
+// Main posts API route. Comments are handled in /api/posts/[postId]/comments/route.ts
+// TODO: Create /api/posts/[postId]/comments/route.ts for comment functionality
 import { db } from "@/libs";
 
 export async function GET() {
