@@ -4,6 +4,8 @@ import React from "react";
 import Image from "next/image";
 
 import { Icons, PostDropdown } from "@app/components";
+import CommentSection from "@/components/CommentSection";
+// Removed import of CommentSection due to missing module
 
 type ListItemPropTypes = {
   post: PostType;
@@ -85,6 +87,7 @@ const ListItem: React.FC<ListItemPropTypes> = ({ post }) => {
               </div>
               <Icons.SmileFace className="text-gray-400 cursor-pointer" />
             </div>
+            <CommentSection postId={post.id} comments={post.comments || []} />
             <div className="border-gray-300 border-b mt-4"></div>
           </div>
         </div>
